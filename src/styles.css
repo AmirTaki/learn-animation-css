@@ -8,14 +8,21 @@ body {
     box-sizing: border-box;
 }
 
-img {
-    /* transform: translate(-200px, 200px); */ /* move -> translate() translateX() translateY() */
-    /* transform: scaleX(0.5); */   /* size -> scaleX() scaleY() */
-    /* transform: scale(3, .5); */  /* size -> scale() */
-    /* transform: rotateY(40deg);     round : rotateX(), rotateY() */
-    /* transform: rotateZ(-45deg); */
-    
-    
-    /* transform:  rotateZ(-90deg) translateY(200px) scale(2); */
-    transform:  rotateZ(-90deg) translateY(200px) 
+.circle {
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    background: pink;
+    color:white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 60px auto;
+    transition: background 3s  ,transform 0.3s 2s linear;
+    /* transtion : transform  (time) (delay) (function time) */
+    /* function time : linear , ease , ease_in , ease_out , ease_in_out */
+}
+
+.circle:hover {
+    background: salmon;
+    transform:     rotate(50deg) translateY(200px);
 }
