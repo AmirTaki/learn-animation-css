@@ -46,6 +46,11 @@ body , html {
     animation-duration: 3s;
     animation-fill-mode: both;  
     animation-iteration-count: infinite;
+
+    /* https://cubic-bezier.com */
+    animation-timing-function:cubic-bezier(0,.84,1,.02)
+    /* ;animation-timing-function: linear, ease, ease-in , ease-out , ease-in-out */
+    
 }
 
 .luigi {
@@ -67,6 +72,6 @@ body , html {
     }
 
     to {
-        transform: translateX(1000px);
+        transform: translateX(1400px);
     }
 }
